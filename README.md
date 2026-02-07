@@ -72,17 +72,19 @@ It focuses on building engineering skills with **Spring Boot, MyBatis, and Redis
 
 ## 📁 项目结构 | Project Structure
 
+```text
 hm-dianping
 ├── src
-│ ├── main
-│ │ ├── java
-│ │ │ └── com.xxx.hmdianping
-│ │ └── resources
-│ │ ├── mapper
-│ │ ├── application.yml
-│ └── test
+│   ├── main
+│   │   ├── java
+│   │   │   └── com.xxx.hmdianping
+│   │   └── resources
+│   │       ├── mapper
+│   │       └── application.yml
+│   └── test
 ├── pom.xml
 └── README.md
+
 
 
 ---
