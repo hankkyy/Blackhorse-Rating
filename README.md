@@ -25,15 +25,15 @@ It focuses on building engineering skills with **Spring Boot, MyBatis, and Redis
   - 手机号验证码登录
   - 基于 Redis 的 Token 登录态管理
 - **商户模块**
-  - 商户与分类查询
+  - 商户 / 分类查询
   - 附近商户查询（基于地理位置）
 - **优惠券模块**
   - 优惠券发布与查询
-  - 秒杀优惠券（高并发场景）
+  - 秒杀优惠券（高并发）
 - **高并发优化**
-  - 缓存穿透 / 雪崩 / 击穿处理
-  - 基于 Redis 的分布式锁
-  - 秒杀库存扣减与订单异步处理
+  - 缓存穿透 / 雪崩 / 击穿
+  - Redis 分布式锁
+  - 秒杀订单异步处理
 - **数据一致性**
   - 数据库与缓存一致性设计
 
@@ -46,25 +46,25 @@ It focuses on building engineering skills with **Spring Boot, MyBatis, and Redis
   - Nearby shop search (Geo-based)
 - **Coupon Module**
   - Coupon creation and query
-  - Seckill (flash sale) coupons under high concurrency
+  - Seckill (flash sale) coupons
 - **High-Concurrency Optimization**
   - Cache penetration, breakdown, and avalanche protection
   - Distributed locks based on Redis
-  - Asynchronous order processing for seckill scenarios
+  - Asynchronous order processing
 - **Data Consistency**
-  - Consistency strategies between database and cache
+  - Cache-database consistency strategies
 
 ---
 
 ## 🛠 技术栈 | Tech Stack
 
-- **Backend Framework**: Spring Boot  
-- **ORM**: MyBatis / MyBatis-Plus  
-- **Database**: MySQL  
-- **Cache**: Redis  
-- **Build Tool**: Maven  
+- **Backend Framework**: Spring Boot
+- **ORM**: MyBatis / MyBatis-Plus
+- **Database**: MySQL
+- **Cache**: Redis
+- **Build Tool**: Maven
 - **Others**:
-  - Redis GEO (location-based queries)
+  - Redis GEO
   - Redis Stream / Message Queue
   - Distributed lock design
 
@@ -85,9 +85,8 @@ hm-dianping
 ├── pom.xml
 └── README.md
 
+```
 
-
----
 
 ## 🚀 本地运行 | Getting Started
 
@@ -110,28 +109,29 @@ spring:
   redis:
     host: localhost
     port: 6379
-3️⃣ 启动项目 | Run the Application
+```
+
+
+### 3️⃣ 启动项目 | Run the Application
+```bash
 mvn spring-boot:run
-🎯 学习重点 | Learning Outcomes
-中文
-深入理解 Redis 在高并发业务中的应用
+```
 
-掌握秒杀系统的完整设计思路
+## 🎯 学习重点 | Learning Outcomes
 
-熟悉缓存与数据库一致性问题的解决方案
+### 中文
+- 深入理解 Redis 在高并发业务中的应用
+- 掌握秒杀系统的完整设计思路
+- 熟悉缓存与数据库一致性问题的解决方案
+- 提升 Spring Boot 后端项目工程能力
 
-提升 Spring Boot 后端项目工程能力
+### English
+- Gain hands-on experience with Redis in high-concurrency scenarios
+- Understand the complete design of a seckill system
+- Learn practical solutions for cache-database consistency
+- Improve backend engineering skills with Spring Boot
 
-English
-Gain hands-on experience with Redis in high-concurrency scenarios
 
-Understand the complete design of a seckill system
-
-Learn practical solutions for cache-database consistency
-
-Improve backend engineering skills with Spring Boot
-
-📎 说明 | Notes
-本项目主要用于 学习与实践
-This project is for learning and practice purposes
-
+## 📎 说明 | Notes
+- 本项目主要用于 **学习与实践**
+- This project is for **learning and practice purposes**
